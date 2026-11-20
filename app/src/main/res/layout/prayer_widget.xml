@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/widget_bg"
+    android:clipToOutline="true">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+        <TextClock android:id="@+id/widget_clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:format12Hour="h:mm" android:format24Hour="HH:mm" android:textColor="#FFFFFF" android:textSize="42sp" android:textStyle="bold" />
+        <TextView android:id="@+id/widget_ampm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5dp" android:text="" android:textColor="#FFFFFF" android:textSize="13sp" />
+        <TextView android:id="@+id/widget_battery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_weight="1" android:gravity="end" android:text="" android:textColor="#F2D184" android:textSize="14sp" android:textStyle="bold" />
+    </LinearLayout>
+    <TextView android:id="@+id/widget_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Memuatkan tarikh…" android:textColor="#F1EDF4" android:textSize="12sp" android:letterSpacing="0.04" />
+    <TextView android:id="@+id/widget_location" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="WLY01 · JAKIM" android:textColor="#C5C9D6" android:textSize="11sp" android:letterSpacing="0.06" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="10dp" android:layout_marginBottom="9dp" android:background="#80613A" android:text="" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SOLAT SETERUSNYA" android:textColor="#F1C75A" android:textSize="11sp" android:letterSpacing="0.08" />
+            <TextView android:id="@+id/widget_next_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textColor="#FFD76D" android:textSize="25sp" android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="end" android:orientation="vertical">
+            <TextView android:id="@+id/widget_next_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textColor="#FFFFFF" android:textSize="20sp" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="end" android:orientation="horizontal">
+                <TextView android:id="@+id/widget_countdown_hour_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:" android:textColor="#FFD04D" android:textSize="14sp" android:textStyle="bold" android:visibility="gone" />
+                <Chronometer android:id="@+id/widget_countdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:countDown="true" android:format="%s" android:text="—" android:textColor="#FFD04D" android:textSize="14sp" android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="8dp" android:layout_marginBottom="2dp" android:background="#80613A" android:text="" />
+    <TextView android:id="@+id/widget_hijri" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Tarikh Hijri" android:textColor="#EEEAF1" android:textSize="12sp" android:layout_marginBottom="1dp" />
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="2dp" android:paddingBottom="2dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_vertical" android:orientation="vertical"><TextView android:id="@+id/name_fajr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SUBUH" android:textColor="#929292" android:textSize="10sp"/><TextView android:id="@+id/time_fajr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textColor="#E8E8E8" android:textSize="16sp"/></LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_vertical" android:orientation="vertical"><TextView android:id="@+id/name_syuruk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SYURUK" android:textColor="#929292" android:textSize="10sp"/><TextView android:id="@+id/time_syuruk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textColor="#E8E8E8" android:textSize="16sp"/></LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_vertical" android:orientation="vertical"><TextView android:id="@+id/name_dhuhr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ZOHOR" android:textColor="#929292" android:textSize="10sp"/><TextView android:id="@+id/time_dhuhr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textColor="#E8E8E8" android:textSize="16sp"/></LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="2dp" android:paddingBottom="2dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_vertical" android:orientation="vertical"><TextView android:id="@+id/name_asr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ASAR" android:textColor="#929292" android:textSize="10sp"/><TextView android:id="@+id/time_asr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textColor="#E8E8E8" android:textSize="16sp"/></LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_vertical" android:orientation="vertical"><TextView android:id="@+id/name_maghrib" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MAGHRIB" android:textColor="#929292" android:textSize="10sp"/><TextView android:id="@+id/time_maghrib" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textColor="#E8E8E8" android:textSize="16sp"/></LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center_vertical" android:orientation="vertical"><TextView android:id="@+id/name_isha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ISYAK" android:textColor="#929292" android:textSize="10sp"/><TextView android:id="@+id/time_isha" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:textColor="#E8E8E8" android:textSize="16sp"/></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:background="#B98B43" android:text="" />
+    <TextView android:id="@+id/widget_ramadan_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="JANGKAAN AWAL RAMADAN 1448:" android:textColor="#FFD04D" android:textSize="16sp" android:textStyle="bold" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+        <TextView android:id="@+id/widget_ramadan_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="8 FEBRUARI 2027 = " android:textColor="#FFFFFF" android:textSize="16sp" />
+        <TextView android:id="@+id/widget_ramadan_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="83 hari lagi!" android:textColor="#FFD04D" android:textSize="16sp" android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
