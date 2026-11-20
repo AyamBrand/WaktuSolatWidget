@@ -57,6 +57,21 @@ Untuk memasang APK debug melalui ADB pada telefon yang sudah disambungkan dengan
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
+## Pasang APK pada telefon
+
+Muat turun APK daripada halaman [GitHub Releases](https://github.com/AyamBrand/WaktuSolatWidget/releases) jika versi sudah diterbitkan. Jika anda membina APK sendiri, ambil fail `app-debug.apk` daripada laluan di atas dan pindahkan ke telefon.
+
+Pada telefon, buka aplikasi **Files** atau pengurus fail, cari APK dalam folder **Downloads**, kemudian tekan fail itu dan pilih **Install**. Jika Android menyekat pemasangan, tekan **Settings** pada amaran tersebut dan benarkan pemasangan daripada aplikasi yang sedang digunakan, seperti pelayar atau Files. Nama dan lokasi tetapan boleh berbeza mengikut telefon. Selepas pemasangan, buka aplikasi Waktu Solat sekali dan sambungkan ke internet supaya jadual zon boleh dimuatkan.
+
+## Tambah widget ke skrin utama
+
+1. Kembali ke skrin utama dan tekan lama ruang kosong. Pada sesetengah telefon, anda boleh cubit skrin dengan dua jari.
+2. Pilih **Widgets**, kemudian cari **Waktu Solat Widget** atau **Waktu Solat**.
+3. Tekan lama widget dan seret ke ruang yang dikehendaki pada skrin utama.
+4. Laraskan saiznya jika perlu. Untuk memilih kawasan, buka aplikasi dan masukkan kod zon JAKIM.
+
+Jika widget memaparkan **“Can’t load widget”**, buang widget lama daripada skrin utama, pastikan aplikasi boleh dibuka dan jadual sudah dimuatkan, kemudian tambah semula widget. Widget ini disediakan untuk skrin utama; paparan pada skrin kunci bergantung pada sokongan sistem telefon dan tidak dijanjikan oleh aplikasi ini.
+
 ## Pilih zon waktu solat
 
 Buka aplikasi, masukkan kod zon kawasan anda dan tekan **Simpan**. Jika tidak tahu kodnya, tekan pautan **Jadual Kod Zon JAKIM** dalam aplikasi. Kod zon bergantung pada daerah; contohnya, Wilayah Persekutuan Kuala Lumpur dan Putrajaya menggunakan `WLY01`.
