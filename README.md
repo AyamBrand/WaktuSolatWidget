@@ -22,41 +22,6 @@ Widget Android untuk memaparkan waktu solat harian Malaysia terus pada skrin uta
 - Disasarkan dan dikompil menggunakan Android API 36.
 - Projek menggunakan Kotlin, Gradle Wrapper dan JDK 17.
 
-## Dapatkan source
-
-```bash
-git clone https://github.com/AyamBrand/WaktuSolatWidget.git
-cd WaktuSolatWidget
-```
-
-Buka folder projek dalam Android Studio. Apabila diminta, benarkan Android Studio melengkapkan Gradle Sync dan memasang Android SDK Platform 36 serta Build-Tools yang diperlukan.
-
-## Bina APK debug
-
-Dalam Android Studio, pilih **Build → Build Bundle(s) / APK(s) → Build APK(s)**. APK akan diletakkan di:
-
-```text
-app/build/outputs/apk/debug/app-debug.apk
-```
-
-Atau bina melalui terminal:
-
-```powershell
-.\gradlew.bat assembleDebug
-```
-
-Pada Linux atau macOS:
-
-```bash
-./gradlew assembleDebug
-```
-
-Untuk memasang APK debug melalui ADB pada telefon yang sudah disambungkan dengan USB debugging:
-
-```bash
-adb install -r app/build/outputs/apk/debug/app-debug.apk
-```
-
 ## Pasang APK pada telefon
 
 Muat turun APK daripada halaman [GitHub Releases](https://github.com/AyamBrand/WaktuSolatWidget/releases) jika versi sudah diterbitkan. Jika anda membina APK sendiri, ambil fail `app-debug.apk` daripada laluan di atas dan pindahkan ke telefon.
